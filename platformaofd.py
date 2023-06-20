@@ -44,7 +44,7 @@ def download_cheques_for_day(date):
     start=datetime.now()
     new_loads = 0 # счётчик загруженных чеков
     if platform=="win32": file_name=date+".csv"
-    else: file_name="/home/cyril/cheques/"+date+".csv"
+    else: file_name="/home/cheques/"+date+".csv"
     
     if path.isfile(file_name): 
         print (date," Файл за такую дату уже есть.")
