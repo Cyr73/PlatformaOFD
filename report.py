@@ -48,7 +48,7 @@ def create_report():
    if platform=="win32": file_catalog=""
    else: file_catalog="/home/cheques/"
    #кортеж отделов
-   departments=('Общ. туалет','Автостоянка','Универсал. рынок','Сельхоз. ярмарка','Услуги зала','Хранение','Сезонная ярмарка', 'Доп.услуги', 'Услуги рынка')
+   departments=('Общ. туалет','Автостоянка','Хранение', 'Доп.услуги')
    #print ('Дата;'+';'.join(departments)) #заголовки по кортежу
    #создаём htm файл
    htm = open(file_catalog+mes+'.htm', "w", encoding='utf-8') # если файл есть, перезапись
