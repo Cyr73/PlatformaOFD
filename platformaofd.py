@@ -4,8 +4,7 @@
 from lxml import html
 import requests
 from requests.exceptions import HTTPError
-from sys import argv
-from sys import platform
+from sys import argv, platform
 from datetime import timedelta, datetime
 from os import path
 import csv
