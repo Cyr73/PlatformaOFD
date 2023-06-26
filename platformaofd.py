@@ -120,10 +120,8 @@ if __name__ == "__main__":
 
     if len (argv) > 1: # если передан параметр в командной строке
         date=argv[1]    # выгрузка за дату из командной строки
-        date2 = ""
     else:
         date = (datetime.now() - timedelta(1)).strftime('%d.%m.%Y') # если параметр не передан, выгрузка за вчера.
-        date2 = (datetime.now() - timedelta(2)).strftime('%d.%m.%Y') # если параметр не передан, выгрузка за позавчера
 
     session=requests.Session()
     # логинимся в ЛК
