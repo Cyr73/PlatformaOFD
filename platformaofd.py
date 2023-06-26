@@ -8,7 +8,6 @@ from sys import argv
 from sys import platform
 from datetime import timedelta, datetime
 from os import path
-import report
 import csv
 
 def num_rub(input_str):# вынимаем 1000 из строки '1 000 р'
@@ -138,11 +137,3 @@ if __name__ == "__main__":
     cheques_file=set() # множество id (работает быстрее чем список)
     download_cheques_for_day(date)
     get_cheques_sum_for_day(date)
-    new_loads2=new_loads # счётчик загруженных чеков за 2 дня
-    if date2: # проверяем за позавчера
-        cheques_file=set() # множество id (работает быстрее чем список)
-        download_cheques_for_day(date2)
-        get_cheques_sum_for_day(date2)
-        new_loads2+=new_loads
-    if debug: file_debug.close()
-    if new_loads2>0: report.create_report()
