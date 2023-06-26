@@ -124,7 +124,6 @@ if __name__ == "__main__":
     else:
         date = (datetime.now() - timedelta(1)).strftime('%d.%m.%Y') # если параметр не передан, выгрузка за вчера.
         date2 = (datetime.now() - timedelta(2)).strftime('%d.%m.%Y') # если параметр не передан, выгрузка за позавчера
-        #date = time.strftime( '%d.%m.%Y' , time.gmtime( time.time()) ) # если параметр не передан, выгрузка за сегодня.
 
     session=requests.Session()
     # логинимся в ЛК
